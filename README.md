@@ -1,3 +1,3 @@
 # mddanishansari.github.io
 
-Simple personal video
+Simple personal website
