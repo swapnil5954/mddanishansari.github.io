@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    position: fixed;
+    position: absolute;
     background: rgba(0, 0, 0, 0.5);
     color: #e1e1e1;
     width: 100%;
@@ -32,12 +32,12 @@ body {
 .personName {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 1.8em;
 }
 
 .position {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 1rem 0 2rem 0;
 }
 
@@ -67,4 +67,17 @@ body {
     text-decoration: none;
     border: solid 1px ##fff;
     color: #fff;
+}
+
+@media (max-width:767px) { 
+    body{background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(bg.jpg)
+    }
+    video{display: none;}
+    .personName{ font-size: 1.8em;}
+    .position{ font-size: 1.5em;}
+    .buttons{display: block; margin: 0 0em 2em 0em; width: 60%;}
+    .buttons div{width: 50%; float: left; margin-bottom:20px;}
 }
